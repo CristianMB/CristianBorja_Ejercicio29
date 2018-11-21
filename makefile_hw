@@ -1,0 +1,5 @@
+all:
+	gcc -fopenmp HelloWorld.c -o HelloWorld.x
+	./HelloWorld.x
+clean:
+	rm *.x

@@ -1,0 +1,9 @@
+all:
+	g++ Adv.cpp -o Adv.x -std=c++11
+	./Adv.x
+	python3 plot.py
+
+clean:
+	rm *.x
+	rm *.dat
+	rm *.pdf
