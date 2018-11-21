@@ -7,8 +7,7 @@
 #include <iostream>
 using namespace std;
 
-//Esta funcion escribe datos en un archivo para que python los grafique
-void Output(string file, double *x, double *u)
+void Output(double *x, double *u, string file)
 {
   ofstream myfile;
   myfile.open(file + ".dat");
@@ -30,8 +29,6 @@ void Output(string file, double *x, double *u)
   myfile.close();
 }
 
-
-//Aca empieza el codigo de python adaptado a C++
 
 double flux(double u)
 {
@@ -83,7 +80,6 @@ void CIN(double *x, double *u)
 }
 
 
-//Solucion
 main(int argc, char const *argv[])
 {
   cout<<N<<endl;
